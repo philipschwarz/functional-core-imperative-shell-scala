@@ -100,8 +100,6 @@ object GameOfLife extends App {
                     ((y - 1) % height) + 1)
   }
 
-  /////////////////////////////////////////////////////////
-
   lazy val width = 20
   lazy val height = 20
 
