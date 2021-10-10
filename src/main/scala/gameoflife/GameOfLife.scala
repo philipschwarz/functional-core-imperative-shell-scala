@@ -1,5 +1,8 @@
 package gameoflife
 
+import cats.effect.IO
+import cats.implicits._
+
 object GameOfLife extends App {
 
   type Pos = (Int, Int)
@@ -16,9 +19,6 @@ object GameOfLife extends App {
            (2,11),(7,11),( 9,11),(14,11),
            (2,12),(7,12),( 9,12),(14,12),
     (4,14),(5,14),(6,14),(10,14),(11,14),(12,14))
-
-  import cats.effect.IO
-  import cats.implicits._
 
   val main: IO[Unit] = life(pulsar)
 
